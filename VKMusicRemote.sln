@@ -1,9 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.12
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKMusicRemote", "VKMusicRemote\VKMusicRemote.csproj", "{D478776C-E77B-472A-BD7C-343B9D03BC71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKMusicRemote.Service", "VKMusicRemote\VKMusicRemote.Service.csproj", "{D478776C-E77B-472A-BD7C-343B9D03BC71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKMusicRemote.ConsoleAppHost", "ConsoleAppHost\VKMusicRemote.ConsoleAppHost.csproj", "{B7212879-342C-4FDD-8717-6EECD56FF122}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D478776C-E77B-472A-BD7C-343B9D03BC71} = {D478776C-E77B-472A-BD7C-343B9D03BC71}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKMusicRemote.SeleniumVK", "VKMusicRemote.Selenium\VKMusicRemote.SeleniumVK.csproj", "{900948D5-7E39-4439-8072-90A8FAF159C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKMusicRemote.DataTransferObjects", "VKMusicRemote.DataTransferObjects\VKMusicRemote.DataTransferObjects.csproj", "{703319B2-BEA8-4CD7-B29A-9058D507D053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKMusicRemote.ConsoleTest", "VKMusicRemote.ConsoleTest\VKMusicRemote.ConsoleTest.csproj", "{B113754B-9936-49F5-9023-2D11D096644A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D478776C-E77B-472A-BD7C-343B9D03BC71} = {D478776C-E77B-472A-BD7C-343B9D03BC71}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +29,22 @@ Global
 		{D478776C-E77B-472A-BD7C-343B9D03BC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D478776C-E77B-472A-BD7C-343B9D03BC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D478776C-E77B-472A-BD7C-343B9D03BC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7212879-342C-4FDD-8717-6EECD56FF122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7212879-342C-4FDD-8717-6EECD56FF122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7212879-342C-4FDD-8717-6EECD56FF122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7212879-342C-4FDD-8717-6EECD56FF122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{900948D5-7E39-4439-8072-90A8FAF159C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{900948D5-7E39-4439-8072-90A8FAF159C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{900948D5-7E39-4439-8072-90A8FAF159C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{900948D5-7E39-4439-8072-90A8FAF159C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{703319B2-BEA8-4CD7-B29A-9058D507D053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{703319B2-BEA8-4CD7-B29A-9058D507D053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{703319B2-BEA8-4CD7-B29A-9058D507D053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{703319B2-BEA8-4CD7-B29A-9058D507D053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B113754B-9936-49F5-9023-2D11D096644A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B113754B-9936-49F5-9023-2D11D096644A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B113754B-9936-49F5-9023-2D11D096644A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B113754B-9936-49F5-9023-2D11D096644A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
