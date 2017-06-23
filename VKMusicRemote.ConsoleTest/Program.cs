@@ -55,7 +55,7 @@ namespace VKMusicRemote.ConsoleTest
         {
             foreach (Song song in songs)
             {
-                Console.WriteLine($"id = {song.Id} Name = {song.Name}");
+                Console.WriteLine($"{song.Id}. {song.Artist} - {song.Name} {song.Length}");
             }
         }
 

@@ -24,21 +24,31 @@ namespace VKMusicRemote.Selenium
 
         private ICollection<Song> ParseSongsList(ReadOnlyCollection<IWebElement> songsWebElements)
         {
+            const int songLengthPart = 0;
+            const int songArtistPart = 1;
+            const int songNamePart = 2;
+            
             var songs = new List<Song>();
             int currentId = 0;
 
             foreach (IWebElement songElement in songsWebElements)
             {
+
+                string[] songDetails = songElement.Text.Split(new[] {"\r\n"}, StringSplitOptions.RemoveEmptyEntries);
+                
                 Song song = new Song
                 {
                     Id = currentId,
 
-                    Name = songElement.Text
+                    Name = songDetails[songNamePart],
+
+                    Length = songDetails[songLengthPart],
+
+                    Artist = songDetails[songArtistPart]
                 };
 
                 songs.Add(song);
-
-
+                
                 currentId++;
             }
 
