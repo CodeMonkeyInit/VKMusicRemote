@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace VKMusicRemote.Selenium.Login
+namespace VKMusicRemote.DataTransferObjects
 {
     [DataContract]
     public class LoginInformation

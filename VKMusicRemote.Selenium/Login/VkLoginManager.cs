@@ -1,10 +1,11 @@
 ﻿using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using VKMusicRemote.DataTransferObjects;
 
 namespace VKMusicRemote.Selenium.Login
 {
-    internal class VkVkLoginManager : IVkLoginManager
+    internal class VkLoginManager : IVkLoginManager
     {
         private const string LoggedInClass = "top_profile_name";
 

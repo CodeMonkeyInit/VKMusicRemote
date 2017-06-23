@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8080/LoginService" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="35f6d7ec-e720-49d5-b3cb-9bc76438b142" SourceId="1" SourceUrl="http://localhost:8080/?xsd=xsd2" />
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="fd15fe4d-60a0-4f75-ad60-2d6b475b1eac" SourceId="1" SourceUrl="http://localhost:8080/?disco" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="2ca70e27-81b3-4886-a0a3-2ea6db8b06dc" SourceId="1" SourceUrl="http://localhost:8080/?xsd=xsd0" />
-    <MetadataFile FileName="LoginService.wsdl" MetadataType="Wsdl" ID="9329fd0e-2b67-46ab-8c2a-cc088ef70434" SourceId="1" SourceUrl="http://localhost:8080/?wsdl" />
-    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="ceafbfbc-2839-44f8-8f70-2ed3d80aed1f" SourceId="1" SourceUrl="http://localhost:8080/?xsd=xsd1" />
+    <MetadataFile FileName="LoginService1.wsdl" MetadataType="Wsdl" ID="71219568-f7e7-4129-bd94-8600718daad8" SourceId="1" SourceUrl="http://localhost:8080/LoginService?wsdl" />
+    <MetadataFile FileName="LoginService.disco" MetadataType="Disco" ID="68f3b64f-169a-48da-b9f0-d26bb6dcd9f2" SourceId="1" SourceUrl="http://localhost:8080/LoginService?disco" />
+    <MetadataFile FileName="LoginService.xsd" MetadataType="Schema" ID="5f4876a9-b5c7-4113-a56d-861b450dfbdf" SourceId="1" SourceUrl="http://localhost:8080/LoginService?xsd=xsd2" />
+    <MetadataFile FileName="LoginService1.xsd" MetadataType="Schema" ID="58cdda20-442a-4d38-bfc3-fce92ff121ef" SourceId="1" SourceUrl="http://localhost:8080/LoginService?xsd=xsd0" />
+    <MetadataFile FileName="LoginService2.xsd" MetadataType="Schema" ID="ae6645aa-ca68-46fa-b1c6-9e2442a19c71" SourceId="1" SourceUrl="http://localhost:8080/LoginService?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

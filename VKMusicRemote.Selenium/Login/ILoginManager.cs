@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using VKMusicRemote.DataTransferObjects;
 
 namespace VKMusicRemote.Selenium.Login
 {

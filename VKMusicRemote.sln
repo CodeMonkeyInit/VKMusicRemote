@@ -8,6 +8,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKMusicRemote.ConsoleAppHost", "ConsoleAppHost\VKMusicRemote.ConsoleAppHost.csproj", "{B7212879-342C-4FDD-8717-6EECD56FF122}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D478776C-E77B-472A-BD7C-343B9D03BC71} = {D478776C-E77B-472A-BD7C-343B9D03BC71}
+		{900948D5-7E39-4439-8072-90A8FAF159C1} = {900948D5-7E39-4439-8072-90A8FAF159C1}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKMusicRemote.SeleniumVK", "VKMusicRemote.Selenium\VKMusicRemote.SeleniumVK.csproj", "{900948D5-7E39-4439-8072-90A8FAF159C1}"

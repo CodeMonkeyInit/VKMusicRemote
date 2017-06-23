@@ -3,6 +3,7 @@ using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using VKMusicRemote.Selenium.Cookies;
 using VKMusicRemote.Selenium.Login;
 
 namespace VKMusicRemote.Selenium.CastleInstaller
@@ -14,13 +15,25 @@ namespace VKMusicRemote.Selenium.CastleInstaller
             container.Register(
                 Component
                     .For<IVkLoginManager>()
-                    .ImplementedBy<VkVkLoginManager>()
+                    .ImplementedBy<VkLoginManager>()
             );
 
             container.Register(
                 Component
                     .For<IWebDriver>()
                     .ImplementedBy<ChromeDriver>()
+            );
+
+            container.Register(
+                Component
+                    .For<IVkRemoteMusic>()
+                    .ImplementedBy<VkRemoteMusic>()
+            );
+
+            container.Register(
+                Component
+                    .For<ICookieManager>()
+                    .ImplementedBy<CookieManager>()
             );
         }
     }

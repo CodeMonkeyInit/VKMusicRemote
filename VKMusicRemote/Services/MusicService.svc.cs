@@ -4,6 +4,10 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using Castle.Windsor;
+using VKMusicRemote.CastleWindsor;
+using VKMusicRemote.DataTransferObjects;
+using VKMusicRemote.Selenium;
 using VKMusicRemote.ServicesContracts;
 
 namespace VKMusicRemote.Services
@@ -12,8 +16,32 @@ namespace VKMusicRemote.Services
     // NOTE: In order to launch WCF Test Client for testing this service, please select MusicService.svc or MusicService.svc.cs at the Solution Explorer and start debugging.
     public class MusicService : IMusicService
     {
-        public void DoWork()
+        private readonly IWindsorContainer _container = ServicesContainer.Container;
+        private readonly IVkClient _vkClient;
+
+        public MusicService()
         {
+            _vkClient = _container.Resolve<IVkClient>();
+        }
+
+        public ICollection<Song> GetUserMusic()
+        {
+            return _vkClient.GetUserMusic();
+        }
+
+        public bool PlaySong(Song song)
+        {
+            return _vkClient.PlaySong(song);
+        }
+
+        public ICollection<Song> SearchSongs(string criterea, bool searchOnlyInUserSongs = false)
+        {
+            return _vkClient.SearchSongs(criterea, searchOnlyInUserSongs);
+        }
+
+        public bool SwitchPlayback()
+        {
+            return _vkClient.SwitchPlayback();
         }
     }
 }

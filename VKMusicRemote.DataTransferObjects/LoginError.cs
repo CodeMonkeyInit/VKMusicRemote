@@ -1,4 +1,4 @@
-﻿namespace VKMusicRemote.Selenium.Login
+﻿namespace VKMusicRemote.DataTransferObjects
 {
     public enum LoginError
     {

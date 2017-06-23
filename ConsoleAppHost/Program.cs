@@ -6,18 +6,20 @@ namespace ConsoleAppHost
 {
     public class Program
     {
-        
         static void Main(string[] args)
         {
-            ServiceHost serviceHost = new ServiceHost(typeof(LoginService));
+            ServiceHost loginServiceHost = new ServiceHost(typeof(LoginService));
+            ServiceHost musicServiceHost = new ServiceHost(typeof(MusicService));
             
-            serviceHost.Open();
+            loginServiceHost.Open();
+            musicServiceHost.Open();
 
-            Console.WriteLine("Host open");
+            Console.WriteLine("Hosts open");
             
             Console.ReadKey();
 
-            serviceHost.Close();
+            loginServiceHost.Close();
+            musicServiceHost.Close();
         }
     }
 }

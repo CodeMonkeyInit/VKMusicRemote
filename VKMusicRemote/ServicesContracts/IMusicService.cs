@@ -1,4 +1,6 @@
-﻿using System.ServiceModel;
+﻿using System.Collections.Generic;
+using System.ServiceModel;
+using VKMusicRemote.DataTransferObjects;
 
 namespace VKMusicRemote.ServicesContracts
 {
@@ -7,6 +9,15 @@ namespace VKMusicRemote.ServicesContracts
     public interface IMusicService
     {
         [OperationContract]
-        void DoWork();
+        ICollection<Song> GetUserMusic();
+
+        [OperationContract]
+        bool PlaySong(Song song);
+
+        [OperationContract]
+        ICollection<Song> SearchSongs(string criterea, bool searchOnlyInUserSongs = false);
+
+        [OperationContract]
+        bool SwitchPlayback();
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.ServiceModel;
+using VKMusicRemote.DataTransferObjects;
 using VKMusicRemote.Selenium.Login;
 
 namespace VKMusicRemote.ServicesContracts

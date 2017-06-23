@@ -15,7 +15,7 @@ namespace VKMusicRemote.ConsoleTest.LoginService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="LoginInformation", Namespace="http://schemas.datacontract.org/2004/07/VKMusicRemote.Selenium.Login")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="LoginInformation", Namespace="http://schemas.datacontract.org/2004/07/VKMusicRemote.DataTransferObjects")]
     [System.SerializableAttribute()]
     public partial class LoginInformation : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -91,7 +91,7 @@ namespace VKMusicRemote.ConsoleTest.LoginService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="LoginError", Namespace="http://schemas.datacontract.org/2004/07/VKMusicRemote.Selenium.Login")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="LoginError", Namespace="http://schemas.datacontract.org/2004/07/VKMusicRemote.DataTransferObjects")]
     public enum LoginError : int {
         
         [System.Runtime.Serialization.EnumMemberAttribute()]

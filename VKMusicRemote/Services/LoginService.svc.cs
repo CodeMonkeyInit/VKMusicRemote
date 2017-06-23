@@ -1,6 +1,6 @@
 ﻿using Castle.Windsor;
-using VKMusicRemote.CastleInstaller;
 using VKMusicRemote.CastleWindsor;
+using VKMusicRemote.DataTransferObjects;
 using VKMusicRemote.Selenium;
 using VKMusicRemote.Selenium.Login;
 using VKMusicRemote.ServicesContracts;
